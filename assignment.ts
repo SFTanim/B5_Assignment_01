@@ -10,9 +10,10 @@
   }
   const inputData = formatString("Hello", false);
   console.log(inputData);
-}
 
-{
+
+
+
   function filterByRating(
     items: { title: string; rating: number }[]
   ): { title: string; rating: number }[] {
@@ -32,8 +33,11 @@
 
   const filterOutput = filterByRating(books);
   console.log(filterOutput);
-}
-{
+
+
+
+
+
   function concatenateArrays<T>(...arrays: T[][]): T[] {
     let newArray: T[] = [];
     arrays.map((array) => {
@@ -45,9 +49,10 @@
   const newArray2 = concatenateArrays<number>([1, 2], [3, 4], [5]);
   console.log(newArray1);
   console.log(newArray2);
-}
 
-{
+
+
+
   class Vehicle {
     private make: string;
     private year: number;
@@ -73,9 +78,11 @@
   const myCar = new Car("Toyota", 2020, "Corolla");
   myCar.getInfo();
   myCar.getModel();
-}
 
-{
+
+
+
+
   function processValue(value: string | number): number {
     if (typeof value === "string") {
       return value.length;
@@ -89,9 +96,10 @@
   const value1 = processValue("hello");
   const value2 = processValue(10);
   console.log(value1, value2);
-}
 
-{
+
+
+
   interface Product {
     name: string;
     price: number;
@@ -124,9 +132,11 @@
 
   const mostExpensive = getMostExpensiveProduct(products);
   console.log("Output: ", mostExpensive);
-}
 
-{
+
+
+
+
   enum Day {
     Monday,
     Tuesday,
@@ -152,9 +162,10 @@
   const holidayOrNot3 = getDayType(Day.Saturday);
   const holidayOrNot2 = getDayType(Day.Sunday);
   console.log(holidayOrNot1, holidayOrNot2, holidayOrNot3);
-}
 
-{
+
+
+  
   async function squareAsync(n: number): Promise<number> {
     return new Promise<number>((resolve, reject) => {
       if (n >= 0) {
