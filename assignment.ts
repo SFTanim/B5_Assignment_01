@@ -138,7 +138,7 @@
   }
 
   function getDayType(day: Day): string {
-    if (day === 6) {
+    if (day === 6 || day === 5) {
       return "Weekend";
     } else if (day < 6 && day >= 0) {
       return "Weekday";
@@ -149,8 +149,9 @@
   }
 
   const holidayOrNot1 = getDayType(Day.Monday);
+  const holidayOrNot3 = getDayType(Day.Saturday);
   const holidayOrNot2 = getDayType(Day.Sunday);
-  console.log(holidayOrNot1, holidayOrNot2);
+  console.log(holidayOrNot1, holidayOrNot2, holidayOrNot3);
 }
 
 {
